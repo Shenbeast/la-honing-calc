@@ -20,7 +20,7 @@ export const ARMOR_STONES = {
   GUARDIAN_STONE_CRYSTAL: {
     name: "Guardian Stone Crystal",
     tier: 1,
-    gold: 16,
+    gold: 13,
     gold_crystal: 0,
     mari_amount: 20,
     mari_crystal: 60
@@ -47,7 +47,7 @@ export const WEAPON_STONES = {
   DESTRUCTION_STONE_CRYSTAL: {
     name: "Destruction Stone Crystal",
     tier: 3,
-    gold: 30,
+    gold: 23,
     gold_crystal: 0,
     mari_amount: 5,
     mari_crystal: 40
@@ -74,7 +74,7 @@ export const LEAPSTONES = {
   HONOR_LEAPSTONE: {
     name: "Honor Leapstone",
     tier: 3,
-    gold: 64,
+    gold: 35,
     gold_crystal: 0,
     mari_amount: 5,
     mari_crystal: 10,
@@ -82,7 +82,7 @@ export const LEAPSTONES = {
   GREAT_HONOR_LEAPSTONE: {
     name: "Great Honor Leapstone",
     tier: 4,
-    gold: 400,
+    gold: 195,
     gold_crystal: 0,
   }
 }
@@ -109,7 +109,7 @@ export const RATE_UP_STONES = {
   SOLAR_GRACE : {
     name: "Solar Grace",
     tier: 3,
-    gold: 62,
+    gold: 35,
     gold_crystal: 0,
     rate_up_bonus: 0,
     mari_amount: 20,
@@ -118,7 +118,7 @@ export const RATE_UP_STONES = {
   SOLAR_BLESSING : {
     name: "Solar Blessing",
     tier: 3,
-    gold: 220,
+    gold: 100,
     gold_crystal: 0,
     rate_up_bonus: 0,
     mari_amount: 15,
@@ -127,7 +127,7 @@ export const RATE_UP_STONES = {
   SOLAR_PROTECTION : {
     name: "Solar Protection",
     tier: 3,
-    gold: 350,
+    gold: 200,
     gold_crystal: 0,
     rate_up_bonus: 0,
     mari_amount: 3,
@@ -136,13 +136,13 @@ export const RATE_UP_STONES = {
   WEAPON_BOOK_1: {
     name: "Metal Book Basic",
     tier: 3,
-    gold: 8000,
+    gold: 1700,
     rate_up_bonus: 0,
   },
   ARMOR_BOOK_1: {
     name: "Armor Book Basic",
     tier: 3,
-    gold: 3000,
+    gold: 1000,
     rate_up_bonus: 0,
   }
 }

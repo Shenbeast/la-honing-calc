@@ -84,6 +84,8 @@ export const LEAPSTONES = {
     tier: 4,
     gold: 195,
     gold_crystal: 0,
+    mari_amount: 5,
+    mari_crystal: 50,
   }
 }
 

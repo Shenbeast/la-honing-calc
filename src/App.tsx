@@ -1,9 +1,9 @@
-import {useState} from 'react';
-import UserInputs from './components/UserInputs';
-import Heading from './components/Heading';
-import Calculations from './components/Calculations';
-import Styled from 'styled-components'
-import { selected_materials, user_gear_inputs, user_inputs } from './types';
+import { useState } from "react";
+import UserInputs from "./components/UserInputs";
+import Heading from "./components/Heading";
+import Calculations from "./components/Calculations";
+import Styled from "styled-components";
+import { selected_materials, user_gear_inputs, user_inputs } from "./types";
 import * as constants from "./constants";
 
 const AppWrapper = Styled.div`
@@ -41,28 +41,44 @@ const AppWrapper = Styled.div`
     width: 48px;
     height: 48px;
   }
-`
+`;
 
 function App() {
   // const [tier, setTier] = useState<number>(1);
   // const [equipmentType, setEquipmentType] = useState<string>("Weapon");
-  const initialUserGearInput : user_gear_inputs = {tier : 1, equipment_type: "Weapon", desired_level: 1, crystal_rate: 500}
-  const initialSelectedMaterials : selected_materials = {armor_stone: constants.ARMOR_STONES.GUARDIAN_STONE_FRAGMENT,  weapon_stone: constants.WEAPON_STONES.DESTRUCTION_STONE_FRAGMENT, rate_up_materials:[constants.RATE_UP_STONES.STAR_BREATH], leapstone: constants.LEAPSTONES.HARMONY_LEAPSTONE}
-  const [userInputs, setUserInputs] = useState<user_inputs>({user_gear_inputs: initialUserGearInput, selected_materials: initialSelectedMaterials})
+  const initialUserGearInput: user_gear_inputs = {
+    tier: 4,
+    equipment_type: "Weapon",
+    desired_level: 1,
+    crystal_rate: 500,
+  };
+  const initialSelectedMaterials: selected_materials = {
+    armor_stone: constants.ARMOR_STONES.GUARDIAN_STONE_FRAGMENT,
+    weapon_stone: constants.WEAPON_STONES.DESTRUCTION_STONE_FRAGMENT,
+    rate_up_materials: [constants.RATE_UP_STONES.STAR_BREATH],
+    leapstone: constants.LEAPSTONES.HARMONY_LEAPSTONE,
+  };
+  const [userInputs, setUserInputs] = useState<user_inputs>({
+    user_gear_inputs: initialUserGearInput,
+    selected_materials: initialSelectedMaterials,
+  });
   return (
     <AppWrapper>
       <div className="box header">
-        <Heading/>
+        <Heading />
       </div>
       <div className="box marketValues">
-        <UserInputs userInputs={userInputs} setUserInputs={setUserInputs}/>
+        <UserInputs userInputs={userInputs} setUserInputs={setUserInputs} />
       </div>
       <div className="box content">
-        {userInputs.user_gear_inputs.tier > 2 && <Calculations userInputs={userInputs}/>}
-        {userInputs.user_gear_inputs.tier < 3 && <span>Probably not gonna bother tbh</span>}
+        {userInputs.user_gear_inputs.tier > 2 && (
+          <Calculations userInputs={userInputs} />
+        )}
+        {userInputs.user_gear_inputs.tier < 3 && (
+          <span>Probably not gonna bother tbh</span>
+        )}
       </div>
-      <div className="box footer">
-      </div>
+      <div className="box footer"></div>
     </AppWrapper>
   );
 }

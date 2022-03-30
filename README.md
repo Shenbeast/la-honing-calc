@@ -1,46 +1,26 @@
-# Getting Started with Create React App
+# Lost Ark Honing Calculator
+Link: [Honing Calculator](https://honing-calculator.surge.sh)
+## Overview
+- Lost Ark is a rpg game where one of the core mechanics is upgrading gear through a process called "honing" 
+- Each honing level has a base chance of succeeding and consumes a fixed amount of resources. Additional rate-up materials up to a certain amount can be added to increase this base chance
+- The resources can be obtained through an in-game auction market by buying from other players using a currency called "gold". Alternatively, they can also be acquired using gems from the in-game store which is also purchased with gold
+- This web app attempts to optimise the cheapest statistical method to successfully upgrade gear based on current market pricings which the player inputs. It provides the user with which source to purchase resources from along with how many rate-up materials to add if applicable.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<p>
+    &nbsp&nbsp&nbsp&nbsp<img width="50%" height="50%" src="./readmeImages/Optimiser.PNG">
+</p>
 
-## Available Scripts
+## Technologies used
+* **Bundler**: Webpack
+* **Framework**: React/TypeScript
+* **Linting and formatting**: ESLint, Prettier
+* **Styling**: Styled Components
+## Setup
 
-In the project directory, you can run:
+```sh
+npm install
+npm start
+```
 
-### `npm start`
+This will open a development server at [http://localhost:3000](http://localhost:3000).
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
-
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
